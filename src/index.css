@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 1880px;
+    background: rgba(10, 11, 26);
+    /* background: linear-gradient(rgba(5, 11, 20, 0.28),rgba(1, 13, 32, 0.69),rgba(10, 11, 26, 1)); */
+}
+@media only screen and (max-width: 768px) {
+    body{
+        width: 168% ;
+    }
+    .bgImg{
+        width: 600px !important;
+        background-size: 100px;
+    }
+    .homediv{
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        width: 500px;
+    }
+    .content p{
+        width: 400px !important;
+    }
+    .LabelSection{
+        overflow-x:auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-wrap: nowrap !important; 
+    }
+    .LabelSection div{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .CardLabelSection .cardSection{
+        overflow-x:auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-wrap: nowrap !important; 
+    }
+    .CardLabelSection .card {
+        width: 200px !important;
+        height: 300px !important;
+        padding: 20px;
+    }
+    .ScardSection .Pcards{
+        overflow-x:auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        flex-wrap: nowrap !important; 
+    }
+    .ScardSection .card{
+        width: 350px !important;
+        height: 500px !important;       
+    }
+    .ScardSection .card-text{
+        width: 120px !important;
+        white-space: pre-line;
+        word-wrap: break-word;
+    }
+    .ScardSection .card-body{
+        display: inline;
+    }
+
+} 
+
+.nav-link{
+    color: #fff;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo{
+    width: 86px;
+    height: 44px;
+}
+.navbar-collapse{
+    place-content: flex-end;
+}
+/* Home Page Style */
+.bgImg{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    opacity: 0.3;
+    position: absolute;
+}
+.content{
+    position: relative;
+    top: 200px;
+    color: rgba(255, 255, 255, 1);
+    height: 500px;
+}
+.content h1{
+    font-family: 'Libre Baskerville', serif;
+    Font-size: 80px;
+    font-weight: 700;
+}
+.content p{
+    opacity: 0.7;
+    font-style: normal;
+    font-family:'Nunito', sans-serif;
+    Font-size: 24px;
+    font-weight: 400;
+    width: 611px;
+    line-height: 32px;
+}
+
+/*Label Section */
+.LabelSection{
+    height: 500px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.LabelSection>div{
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    flex: 1;
+    margin: 35px;    
+}
+.LabelSection>div:nth-child(1){
+    border: 1px solid rgba(221, 76, 172, 1) !important;
+}
+.LabelSection>div:nth-child(1) i{
+    color: blue;
+}
+.LabelSection>div>div{
+    position: relative;
+    text-align: center;
+    top: 35px;
+}
+.LabelSection>div>div>p{
+    opacity: 0.6;
+}
+.LabelSection>div>div>h1{
+    font-family: 'Libre Baskerville', serif;
+}
+.LabelSection>div>div i{
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+/*card label section style */
+.CardLabelSection,.ScardSection{
+    opacity: 0.9;
+    flex-wrap: wrap;
+}
+.CardLabelSection .sectionTitle, .ScardSection .sectionTitle{
+    color: #fff;
+    font-family: 'Libre Baskerville',serif;
+    width: 80%;
+    padding: 10px;
+}
+.CardLabelSection .sectionText, .ScardSection .sectionText{
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(229, 197, 88, 1);
+}
+.CardLabelSection .card-text{
+    width: fit-content;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-family: 'Nunito',serif;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(229, 197, 88, 1);
+}
+.CardLabelSection .card{
+    cursor: pointer;
+    flex: 1;
+    margin: 12px;
+    background: #111229;
+    box-shadow: 9px -9px 0 0 #234C97;
+}
+.CardLabelSection .card img{
+    height: 200px;
+}
+.CardLabelSection .card-title{
+    color: #fff;
+    font-family:'Libre Baskerville',serif;
+    font-size: 20px;
+}
+.CardLabelSection a{
+    text-decoration: none;
+}
+.CardLabelSection a:nth-last-child(1){
+    float: right;
+    color: rgba(221, 76, 172, 1);
+}
+/* Scard Section */
+.ScardSection .card{
+    background-color: rgba(10, 11, 26, 1);
+    box-shadow: 9px -9px 0 0 #5293E8 ;
+    border-radius: 10px;
+    border: 2px solid #E5AF56;
+    padding: 10px;
+    color: #fff;
+    font-family:'Libre Baskerville',serif;
+    flex: 1;
+    margin: 10px;
+}
+.ScardSection .card img{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin:0 10px;
+}
+.ScardSection .card .card-text{
+    color: #fff;
+    font-family: 'Nunito',serif;
+}
+.ScardSection .card .card-title{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.card-body>div>p{
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(229, 197, 88, 1);
+}
